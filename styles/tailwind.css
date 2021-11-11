@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "testfont";
+	src: url("./HelveticaNeueLTPro-53-Extended.woff2") format("woff2");
+	font-weight: normal;
+}

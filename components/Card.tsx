@@ -9,7 +9,7 @@ export const Card = ({
   id,
 }) => {
   return (
-    <div key={id} className="shadow  max-w-md  rounded">
+    <div key={id} className="shadow  max-w-md  rounded hover:outline-blue font-neue">
       <img src={imageUrl} />
       <div className="p-5 flex flex-col space-y-2">
         <p className="text-sm text-blue-500">{category}</p>
