@@ -7,6 +7,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model Account {
+  id Int @id @default(autoincrement())
+}
+
 model User {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -15,6 +19,10 @@ model User {
   image     String?
   role      Role     @default(USER)
   bookmarks Link[]
+}
+
+model Session {
+  id Int @id @default(autoincrement())
 }
 
 enum Role {
