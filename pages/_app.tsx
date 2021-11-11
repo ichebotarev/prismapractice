@@ -6,13 +6,13 @@ import  client  from "../lib/apollo";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <UserProvider>
+   
       <ApolloProvider client={client}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ApolloProvider>
-    </UserProvider>
+   
   );
 }
 
