@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Awesome Links</title>
+        <title>NZ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto max-w-5xl my-20">
@@ -76,7 +76,7 @@ export default function Home() {
           </button>
         ) : (
           <p className="my-10 text-center font-medium">
-            You've reached the end!
+            End
           </p>
         )}
       </div>
