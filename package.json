@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
-   
   },
   "engines": {
     "node": "14.x"
@@ -34,6 +33,7 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
+    "@types/cors": "^2.8.12",
     "@types/micro-cors": "^0.1.2",
     "@types/node": "^16.3.2",
     "@types/react": "^17.0.14",

@@ -32,6 +32,7 @@ export default function Home() {
   if (loading) return <p>Loading......</p>;
 
   if (error) return <p>Oops, something went wrong {error.message}</p>;
+  console.log(error);
 
   const { hasNextPage, endCursor } = data.links.pageInfo;
 
