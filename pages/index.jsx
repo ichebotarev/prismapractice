@@ -4,6 +4,8 @@ import { useUser } from '@auth0/nextjs-auth0';
 import Link from 'next/link';
 import { AwesomeLink } from '../components/AwesomeLink';
 
+
+
 const AllLinksQuery = gql`
   query allLinksQuery($first: Int, $after: String) {
     links(first: $first, after: $after) {
@@ -82,7 +84,7 @@ function Home() {
                 variables: { after: endCursor },
                 //@ts-ignore
                 updateQuery: (prevResult, { fetchMoreResult }) => {
-                  //@ts-ignore
+                  
                   fetchMoreResult.links.edges = [
                     //@ts-ignore
                     ...prevResult.links.edges,
