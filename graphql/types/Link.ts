@@ -10,18 +10,18 @@ export const Link = objectType({
     t.string('description');
     t.string('imageUrl');
     t.string('category');
-    t.list.field('users', {
-      type: User,
-      async resolve(parent, _args, ctx) {
-        return await ctx.prisma.link
-          .findUnique({
-            where: {
-              id: parent.id,
-            },
-          })
-          .users();
-      },
-    });
+    // t.list.field('users', {
+    //   type: User,
+    //   async resolve(parent, _args, ctx) {
+    //     return await ctx.prisma.link
+    //       .findUnique({
+    //         where: {
+    //           id: parent.id,
+    //         },
+    //       })
+    //       .users();
+    //   },
+    // });
   },
 });
 export const Edge = objectType({

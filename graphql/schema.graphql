@@ -14,7 +14,6 @@ type Link {
   imageUrl: String
   title: String
   url: String
-  users: [User]
 }
 
 type PageInfo {
