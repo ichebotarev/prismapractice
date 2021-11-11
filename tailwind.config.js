@@ -9,6 +9,7 @@ module.exports = {
     },
     fontFamily: {
       'neue': 'testfont',
+      'start': 'pstart',
     }
   },
   variants: {

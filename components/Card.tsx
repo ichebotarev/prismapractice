@@ -9,7 +9,7 @@ export const Card = ({
   id,
 }) => {
   return (
-    <div key={id} className="shadow  max-w-md  rounded hover:outline-blue font-neue">
+    <div key={id} className="shadow  max-w-md  rounded hover:outline-blue font-start text-xs">
       <img src={imageUrl} />
       <div className="p-5 flex flex-col space-y-2">
         <p className="text-sm text-blue-500">{category}</p>
@@ -17,7 +17,8 @@ export const Card = ({
         <p className="text-gray-600">{description}</p>
         <a href={url} className="flex hover:text-blue-500">
           {/* removes https from url */}
-          {url.replace(/(^\w+:|^)\/\//, '')}
+          {/* {url.replace(/(^\w+:|^)\/\//, '')} */}
+          {title}
           <svg
             className="w-6 h-6"
             fill="currentColor"
