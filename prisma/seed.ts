@@ -1,9 +1,8 @@
-import { tracks } from './../data/tracks';
 import { PrismaClient } from '@prisma/client';
 import { links } from '../data/links';
 
 const prisma = new PrismaClient();
-const nwlinks = links.concat(tracks);
+
 
 async function main() {
   await prisma.user.create({
@@ -14,7 +13,7 @@ async function main() {
   });
 
   await prisma.link.createMany({
-    data: nwlinks,
+    data: links,
   });
 
 
