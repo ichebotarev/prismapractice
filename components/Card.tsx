@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AwesomeLink = ({
+export const Card = ({
   imageUrl,
   url,
   title,
