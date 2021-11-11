@@ -36,18 +36,18 @@ function Home() {
     variables: { first: 2 },
   });
 
-  if (!user) {
-    return (
-      <div className="flex items-center justify-center">
-        You need to{' '}
-        <Link href="/api/auth/login">
-          <a className=" block bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Login
-          </a>
-        </Link>
-      </div>
-    );
-  }
+  // if (!user) {
+  //   return (
+  //     <div className="flex items-center justify-center">
+  //       You need to{' '}
+  //       <Link href="/api/auth/login">
+  //         <a className=" block bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+  //           Login
+  //         </a>
+  //       </Link>
+  //     </div>
+  //   );
+  // }
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
 
@@ -56,7 +56,7 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Awesome Links</title>
+        <title>Neb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto max-w-5xl my-20 px-5">
